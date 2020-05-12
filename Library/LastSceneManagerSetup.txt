@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/blackjack with a twist.unity
+  isLoaded: 1
+  isActive: 1
