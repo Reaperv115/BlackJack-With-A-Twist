@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 //using UnityEngine.Experimental.UIElements;
 using UnityEngine.UI;
 
@@ -19,6 +21,8 @@ public class deck : card
     Transform dealerDeck;
     [SerializeField]
     Transform playerDeck;
+    [SerializeField]
+    Transform originalDeck;
     
     Text hit3;
     Text choice;
@@ -27,13 +31,13 @@ public class deck : card
     Text dTotal, pTotal;
 
    
-    Button button, yes, no, one, eleven;
+    Button button, yes, no, one, eleven, playagainyes, playagainno;
 
     //used for itering through
     //lists in start and the DealtoPlayer 
     //and DealtoDealer functions
     int j = 0;
-    int dK = 0, pK = 0, cI = 0, l = 0;
+    int dK = 0, pK = 0, cardinfoIndex = 0, l = 0;
     int dealerTotal = 0;
     int playerTotal = 0;
 
@@ -62,6 +66,10 @@ public class deck : card
         one.onClick.AddListener(On1);
         eleven = GameObject.Find("11").GetComponent<Button>();
         eleven.onClick.AddListener(On11);
+        playagainyes = GameObject.Find("playagainYes").GetComponent<Button>();
+        playagainyes.onClick.AddListener(onagainYes);
+        playagainno = GameObject.Find("playagainNo").GetComponent<Button>();
+        playagainno.onClick.AddListener(onagainNo);
         //
 
         //initializing text objects
@@ -102,6 +110,8 @@ public class deck : card
         no.gameObject.SetActive(false);
         one.gameObject.SetActive(false);
         eleven.gameObject.SetActive(false);
+        playagainno.gameObject.SetActive(false);
+        playagainyes.gameObject.SetActive(false);
     }
 	
 	// Update is called once per frame
@@ -235,6 +245,8 @@ public class deck : card
                         result.text = "You win!";
                 }
             }
+            playagainno.gameObject.SetActive(true);
+            playagainyes.gameObject.SetActive(true);
             
         }
         
@@ -255,11 +267,11 @@ public class deck : card
         StartCoroutine(moveCard(dealerCards[dK], dealerDeck));
         if (dealerCards[dK] != null)
         {
-            if (cI == cardInfo.Capacity) { }
+            if (cardinfoIndex == cardInfo.Capacity) { }
             else
             {
-                cardInfo[cI].text = dealerCards[dK].name;
-                ++cI;
+                cardInfo[cardinfoIndex].text = dealerCards[dK].name;
+                ++cardinfoIndex;
                 cards.Remove(cards[l]);
                 ++dK;
             }
@@ -329,11 +341,11 @@ public class deck : card
         StartCoroutine(moveCard(playerCards[pK], playerDeck));
         if (playerCards[pK] != null)
         {
-            if (cI == cardInfo.Capacity) { }
+            if (cardinfoIndex == cardInfo.Capacity) { }
             else
             {
-                cardInfo[cI].text = playerCards[pK].name;
-                ++cI;
+                cardInfo[cardinfoIndex].text = playerCards[pK].name;
+                ++cardinfoIndex;
                 cards.Remove(cards[l]);
                 ++pK;
             }
@@ -379,7 +391,7 @@ public class deck : card
          {
              dealerCards.Add(null);
             dealerCards[dK] = cards[l];
-            cardInfo[cI].text = dealerCards[dK].name;
+            cardInfo[cardinfoIndex].text = dealerCards[dK].name;
             StartCoroutine(moveCard(dealerCards[dK], dealerDeck));
             cards.Remove(cards[l]);
 
@@ -425,11 +437,11 @@ public class deck : card
                         break;
                 }
             }
-            ++cI;
+            ++cardinfoIndex;
             return;
          }
          else
-             ++cI;
+             ++cardinfoIndex;
     }
 
     public void On1() { isOne = true; }
@@ -530,6 +542,18 @@ public class deck : card
             }
         }
     }
+    public void onagainNo()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+    public void onagainYes()
+    {
+        SceneManager.LoadScene("Game");
+            
+
+        
+    }
+
     IEnumerator moveCard(GameObject c, Transform dest)
     {
         while (c.transform.position != dest.position)

@@ -38,3 +38,44 @@ F:\Dev\Programming Tests\blackjack with a twist\obj\Debug\Assembly-CSharp.csproj
 F:\Dev\Programming Tests\blackjack with a twist\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 F:\Dev\Programming Tests\blackjack with a twist\obj\Debug\Assembly-CSharp.dll
 F:\Dev\Programming Tests\blackjack with a twist\obj\Debug\Assembly-CSharp.pdb
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Assembly-CSharp.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Assembly-CSharp.pdb
+E:\Dev\blackjack with a twist\Temp\bin\Debug\nunit.framework.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEditor.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.Analytics.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.HoloLens.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.Networking.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.Purchasing.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.SpatialTracking.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.StandardEvents.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.TestRunner.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.Timeline.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.UI.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.UIAutomation.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.Cecil.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.SerializationLogic.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.DataContract.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\ExCSS.Unity.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.UNetWeaver.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.CecilTools.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.Cecil.Pdb.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\Unity.Cecil.Mdb.dll
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEditor.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.UI.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.Networking.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.TestRunner.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\nunit.framework.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.Timeline.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.UIAutomation.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.GoogleAudioSpatializer.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.HoloLens.xml
+E:\Dev\blackjack with a twist\Temp\bin\Debug\UnityEngine.SpatialTracking.xml
+E:\Dev\blackjack with a twist\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+E:\Dev\blackjack with a twist\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+E:\Dev\blackjack with a twist\obj\Debug\Assembly-CSharp.csproj.CopyComplete
+E:\Dev\blackjack with a twist\obj\Debug\Assembly-CSharp.dll
+E:\Dev\blackjack with a twist\obj\Debug\Assembly-CSharp.pdb
